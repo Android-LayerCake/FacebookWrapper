@@ -10,7 +10,7 @@ For more information about LayerCake and corresponding academic use license, ple
 * https://layercake.cs.washington.edu/
 
 
-Academic License
+License
 ===============
 
 Copyright 2013 University of Washington.
