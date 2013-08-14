@@ -86,7 +86,7 @@ public class Like extends Activity {
 				String encoding = "utf-8";
 				
 				// Loading something prevents Facebook from causing DOM Exception 18
-				webView.loadDataWithBaseURL("http://layercake.cs.washington.edu", html, mime, encoding, null);
+				webView.loadDataWithBaseURL("https://layercake.cs.washington.edu", html, mime, encoding, null);
 				
 			}
 
@@ -107,8 +107,8 @@ public class Like extends Activity {
 	
 	private String getFacebookLikeHtml(String appId, String url) {
 		
-		String html = "<html><head></head><body>\n"
-						+ "<div id=\"fb-root\"></div>\n"
+		String html = "<html><head></head><body>blah\n"
+						/*+ "<div id=\"fb-root\"></div>\n"
 						+ "<script>\n"
 						+ "window.fbAsyncInit = function() {\n"
 						+ "  // init the FB JS SDK\n"
@@ -131,7 +131,8 @@ public class Like extends Activity {
 						+ "     ref.parentNode.insertBefore(js, ref);\n"
 						+ "   }(document, false));\n"
 						+ "</script>\n"
-						+ "<div class=\"fb-like\" data-href=\"" + url + "\" data-send=\"false\" data-width=\"450\" data-show-faces=\"false\"></div>\n"
+						+ "<div class=\"fb-like\" data-href=\"" + url + "\" data-send=\"false\" data-width=\"450\" data-show-faces=\"false\"></div>\n"*/
+						+ "<iframe src='//www.facebook.com/plugins/like.php?href=https%3A%2F%2Flayercake.cs.washington.edu&amp;width=450&amp;height=35&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;send=false' scrolling='no' frameborder='0 style='border:none; overflow:hidden; width:450px; height:35px;' allowTransparency='true'></iframe>"
 						+ "</body></html>";
 		
 		return html;

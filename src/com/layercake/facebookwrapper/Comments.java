@@ -84,7 +84,7 @@ public class Comments extends Activity {
 				String encoding = "utf-8";
 				
 				// Loading something prevents Facebook from causing DOM Exception 18
-				webView.loadDataWithBaseURL("http://layercake.cs.washington.edu", html, mime, encoding, null);
+				webView.loadDataWithBaseURL("https://layercake.cs.washington.edu", html, mime, encoding, null);
 				
 			}
 
